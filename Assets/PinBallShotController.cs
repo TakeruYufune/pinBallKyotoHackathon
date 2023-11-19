@@ -33,6 +33,11 @@ public class NewBehaviourScript : MonoBehaviour
 			// ボールに力を加える
 			ballRigidBody.AddForce (Pos1*pinPower*105f);
 		}
+
+        //reset
+        if (Input.GetKeyUp (KeyCode.R)) {
+            ball.transform.position = new Vector3(5,10,0);
+        }
         
     }
 
