@@ -36,7 +36,8 @@ public class NewBehaviourScript : MonoBehaviour
 
         //reset
         if (Input.GetKeyUp (KeyCode.R)) {
-            ball.transform.position = new Vector3(5,10,0);
+            ball.transform.position = new Vector3(-1.55f,4.41f,-8.85f);
+            ballRigidBody.velocity = Vector3.zero;
         }
         
     }
